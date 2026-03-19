@@ -1,12 +1,10 @@
-public class Produto {
+public abstract class Produto {
     private int id;
     private String nome;
-    private double preco;
 
-    public Produto(int id, String nome, double preco) {
+    public Produto(int id, String nome) {
         this.id = id;
         this.nome = nome;
-        this.preco = preco;
     }
 
     public int getId() {
@@ -17,8 +15,6 @@ public class Produto {
         return nome;
     }
 
-    public double getPreco() {
-        return preco;
-    }
+    public abstract double getPreco();
 
 }
